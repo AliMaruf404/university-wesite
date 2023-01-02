@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+button{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.sectionMargin{
+    margin-bottom: 100px;
+}
+
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+
+
+header{
+    padding: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.container-full::before{
+    position: absolute;
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: .5;
+}
+
+.container-full{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+.container-full::after{
+    position: absolute;
+    content: "";
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+
+
+.logo img{
+    height: 100%;
+    width: 200px;
+}
+
+.menu{
+    display: table;
+    float: right;
+}
+
+.menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding-right: 20px;
+}
+
+.col-50{
+    width: 50%;
+    float: left;
+}
+
+.home-content{
+    text-align: center;
+}
+
+.home-content h1{
+    text-align: center;
+    font-size: 70px;
+    margin-top: 300px;
+    color: white;
+    opacity: 1;
+}
+
+.home-content h4{
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+.home-content button {
+    margin-top: 60px;
+    background: none;
+    border: 2px solid white;
+    padding: 15px 30px;
+    font-size: 17px;
+    color: white;
+    transition: .5s;
+}
+
+.home-content button:hover{
+    background-color: orangered;
+    border: 2px solid orangered;
+
+}
+
+/*home css end*/
+
+/*couse css*/
+
+.sectionHead{
+    text-align: center;
+}
+
+.sectionHead h1{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.sectionHead h4{
+    color: gray;
+    margin-top: 10px;
+}
+
+.col33{
+    width: 33%;
+    float: left
+}
+
+.courseContent{
+    text-align: center;
+    background-color: rgb(255, 212, 219);
+    margin: 60px 20px;
+    padding: 30px;
+    color: gray;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.courseContent:hover{
+    -webkit-box-shadow: 0px 12px 27px 6px rgb(0 0 0 / 53%);
+    box-shadow: 0px 12px 27px 6px rgb(0 0 0 / 53%);
+}
+
+.courseContent h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+/* course css end*/ 
+
+/*campus css stert*/
+
+#campus{
+    margin-top: 100px;
+}
+
+.campusBox{
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.campusBox::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(165, 0, 27);
+    z-index: -1;
+    opacity: 0;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+.campusBox:hover::after{
+    opacity: .5;
+}
+
+.london{
+    background-image: url(../images/london.png);
+    background-position: center;
+    background-size: cover;
+    padding: 280px 0px;
+    margin: 60px 20px;
+}
+
+.nw{
+    background-image: url(../images/newyork.png);
+    background-position: center;
+    background-size: cover;
+    padding: 280px 0px;
+    margin: 60px 20px;
+}
+
+.washington{
+    background-image: url(../images/washington.png);
+    background-position: center;
+    background-size: cover;
+    padding: 280px 0px;
+    margin: 60px 20px;
+}
+
+.campusBox h1{
+    visibility: hidden;
+}
+
+.campusBox:hover h1{
+    visibility: visible;
+}
+
+/*campus css end*/
+
+/*facilities css start*/
+
+.facilitiesBox{
+    margin: 60px 30px;
+}
+
+.facilitiesBox img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.facilitiesBox h1{
+    margin: 20px 0px;
+    font-size: 25px;
+}
+
+.facilitiesBox h4{
+    color: gray;
+}
+
+/*facilities css end*/
+
+/*review css start*/
+
+.reviewBox{
+    display: flex;
+    margin: 60px 20px;
+    background-color: rgb(255, 229, 234);
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.reviewBox img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+.reviewBox p{
+    margin-bottom: 20px;
+}
+
+.reviewBox h1{
+    margin-bottom: 15px;
+}
+
+.rating li{
+    list-style: none;
+    display: inline-block;
+    color: orangered;
+}
+
+/*review css end*/
+
+.contactBox::before{
+    position: absolute;
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: .5;
+}
+
+.contactBox{
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+    padding: 150px;
+    position: relative;
+    margin-top: 500px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.contactBox::after{
+    position: absolute;
+    content: "";
+    background-image: url(../images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    top: 0;
+    left: 0;
+}
+
+.contactBox h1{
+    color: white;
+    font-size: 47px;
+
+}
+
+.contactBox button {
+    margin-top: 60px;
+    background: none;
+    border: 2px solid white;
+    padding: 15px 30px;
+    font-size: 17px;
+    color: white;
+    transition: .5s;
+}
+
+.contactBox button:hover{
+    background-color: orangered;
+    border: 2px solid orangered;
+
+}
+
+/*contact css end*/
+
+/*about css start*/
+
+.aboutContent{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.aboutContent p{
+    color: gray;
+}
+
+.aboutContent h2{
+    margin-bottom: 40px;
+}
+
+.aboutIcon li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px ;
+    color: orangered;
+
+}
+
+
+
+
+
+
+
+
